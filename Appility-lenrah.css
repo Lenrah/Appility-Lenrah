@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+.moka{
+    height: 100vh;
+    width: 100%;
+    background: #005533;
+    background-image: url(Appility-lenrah.png);
+    background-size: 110%;
+    background-position: -9vw 37%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1000;
+    animation: moka 0.5s linear 2s forwards;
+  }
+  @keyframes moka{
+    from{
+    opacity: 1;
+    }
+    to{  
+      opacity: 0;
+      z-index: -1000;
+    }
+    
+  }
+body{
+    background-image: linear-gradient(to top, #005533 50% , green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+h2{
+    color: #00ff00;
+    font-size: 3.5em;
+}
+.Prompt{
+    background-color: #005533;
+    padding: 5px;
+    width: 460px;
+    border: solid 3px #004433;
+    border-radius: 10px;
+}
+@media (min-width:800px) and (max-width: 3000px){
+    .Prompt{
+        width: 750px;
+    }
+    button{
+        position: relative;
+        right: -20px;
+    }
+}
+input,button{
+    padding: 10px;
+    border: none;
+    color: #00ff00;
+}
+input{
+    background-color: #005533;
+    font-size: 20px;
+    width: 73%;
+    outline: none;
+}
+input::placeholder{
+    color: #003333;
+}
+button{
+    background-color: #003333;
+    font-size: 17px;
+    font-weight: 525;
+    width: 20%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #004133;
+}
+.Images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.Images div{
+    height: 30vw;
+    width: 30vw;
+    background-color: #005533;
+    border-radius: 10px;
+    border: solid 3px #004433;
+}
+.Images div img{
+    width: 100%;
+}
