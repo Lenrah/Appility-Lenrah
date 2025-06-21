@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appility Lenrah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="moka">
+        <h1>Appility Lenrah</h1>
+    </div>
+    <header>
+        <h1>Appility Lenrah</h1>
+        <p>إنشاء الصور والفيديوهات باستخدام الذكاء الاصطناعي</p>
+    </header>
+    <main>
+        <form id="aiForm">
+            <label for="type">نوع المحتوى:</label>
+            <select id="type">
+                <option value="image" selected>صورة</option>
+                <option value="video">فيديو</option>
+            </select>
+
+            <label for="description">الوصف:</label>
+            <textarea id="description" placeholder="أدخل وصف الصورة أو الفيديو"></textarea>
+
+            <label for="quality">اختر الجودة:</label>
+            <select id="quality">
+                <option value="low">منخفضة</option>
+                <option value="medium" selected>متوسطة</option>
+                <option value="high">مرتفعة</option>
+            </select>
+
+            <button type="submit">إنشاء</button>
+        </form>
+        <div id="result"></div>
+        <div id="download"></div>
+    </main>
+    <footer>
+        <p>© 2025 Appility Lenrah</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
