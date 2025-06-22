@@ -6,8 +6,6 @@ document.getElementById("aiForm").addEventListener("submit", async function(e) {
     const type = document.getElementById("type").value;
     const resultDiv = document.getElementById("result");
     const downloadDiv = document.getElementById("download");
-    const apiphoto = "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";
-    const apivideo = "key_c2cfa3a288d294c1088cf2752dcc1184eeaae2d2d47a5cf2e93fa888d25e8aae424f4cb39c250f9a00691c76b81cbe82b65a9efff8ed2d7aaba27d15f2dcb55c";
 
     resultDiv.innerHTML = "<p>جارٍ إنشاء " + (type === "image" ? "الصورة" : "الفيديو") + "...</p>";
     downloadDiv.innerHTML = "";
@@ -22,7 +20,7 @@ document.getElementById("aiForm").addEventListener("submit", async function(e) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${apiphoto}`
+                    "Authorization": `Bearer ${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}`
                 },
                 body: JSON.stringify({
                     prompt: desc,
@@ -49,7 +47,7 @@ document.getElementById("aiForm").addEventListener("submit", async function(e) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${apivideo}`
+                    "Authorization": `Bearer ${key_c2cfa3a288d294c1088cf2752dcc1184eeaae2d2d47a5cf2e93fa888d25e8aae424f4cb39c250f9a00691c76b81cbe82b65a9efff8ed2d7aaba27d15f2dcb55c}`
                 },
                 body: JSON.stringify({
                     prompt: desc,
