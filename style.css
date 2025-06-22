@@ -1,0 +1,144 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: radial-gradient(#000000, #01019c);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.moka{
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(#000000, #01019c);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1000;
+    animation: moka 1s linear 2s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes moka{
+    from{
+    opacity: 1;
+    }
+    to{  
+      opacity: 0;
+      z-index: -1000;
+    }
+    
+  }
+
+  h1{
+    font-family: fantasy;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+@media (max-width: 501px){
+    h1{
+        font-size: 2em;
+    }
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(to left, #000033A3, #01019ca3, #000033A3 );   
+    animation-name: transparent;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    }
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+}
+
+label{
+    font-weight: 700;
+}
+
+textarea, select, button {
+    outline: none;
+    background-color: darkcyan;
+    color: #00ffff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea::placeholder{
+    color: #ffffff75;
+}
+
+button {
+    background-color: #2979ff;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #5393ff;
+}
+
+footer {
+    background-image: linear-gradient(to left, #000033A3, #01019ca3, #000033A3 );   
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes transparent{
+    0%{
+       background-size: 100% 100%
+    }
+    50%{
+        background-size: 50% 100%
+    }
+    100%{
+        background-size: 100% 100%
+    }
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #00c853;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #00e676;
+}
